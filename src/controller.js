@@ -7,21 +7,25 @@ function characterController() {
             playerPosition.y += 10;
             console.log(event)
             renderGame()
+            debugWindow()
 
         } if (event.key === "ArrowUp" || event.key === "w") {
             playerPosition.y -= 10;
             console.log(event)
             renderGame()
+            debugWindow()
 
         } if (event.key === "ArrowLeft" || event.key === "a") {
             playerPosition.x -= 10;
             console.log(event)
             renderGame()
+            debugWindow()
 
         } if (event.key === "ArrowRight" || event.key === "d") {
             playerPosition.x += 10;
             console.log(event)
             renderGame()
+            debugWindow()
         }
     });
 }
