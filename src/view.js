@@ -14,6 +14,6 @@ function renderGame(){
 }
 //Her tegner vi alle forgrunnselementer (bilen, brødre, gjenstander i veien, etc)
 function renderForegroundElements(){
-    const playerCar = `<img style="top:${playerPosition.y};left:${playerPosition.x};" src="" id="playerCar"></img>`
+    const playerCar = `<img style="top:${playerPosition.y};left:${playerPosition.x};" src="assets/cars/red_car.png" id="playerCar"></img>`
     return playerCar
 }
