@@ -3,25 +3,31 @@ characterController()
 function characterController() {
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowDown" || event.key === "s") {
-            playerPosition.y += 10;
-            console.log(event)
-            renderGame()
+    if (event.key === "ArrowDown" || event.key === "s") {
+    playerPosition.y += 10;
+    } else if (event.key === "ArrowUp" || event.key === "w") {
+    playerPosition.y -= 10;
+    } else if (event.key === "ArrowLeft" || event.key === "a") {
+    playerPosition.x -= 10;
+    } else if (event.key === "ArrowRight" || event.key === "d") {
+    playerPosition.x += 10;
+    }
+    //sjekker kolisjon shit
+    if (playerPosition.x < roadGrid.x) {
+    playerPosition.x = roadGrid.x;
 
-        } if (event.key === "ArrowUp" || event.key === "w") {
-            playerPosition.y -= 10;
-            console.log(event)
-            renderGame()
+    } else if (playerPosition.x > roadGrid.x + roadGrid.width) {
+    playerPosition.x = roadGrid.x + roadGrid.width;
+    }
 
-        } if (event.key === "ArrowLeft" || event.key === "a") {
-            playerPosition.x -= 10;
-            console.log(event)
-            renderGame()
+    if (playerPosition.y < roadGrid.y) {
+    playerPosition.y = roadGrid.y;
 
-        } if (event.key === "ArrowRight" || event.key === "d") {
-            playerPosition.x += 10;
-            console.log(event)
-            renderGame()
-        }
+    } else if (playerPosition.y > roadGrid.y + roadGrid.height) {
+    playerPosition.y = roadGrid.y + roadGrid.height;
+    }
+    
+    renderGame();
+    debugWindow();
     });
-}
+    }

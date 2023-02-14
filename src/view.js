@@ -21,3 +21,11 @@ function renderForegroundElements(){
     `
     return foregroundLayer
 }
+
+function renderUiElement() {
+    const Ui = `
+    <div id="health"></div>
+    <div id="points"></div>
+    <div id="reset"></div>
+    `
+}
