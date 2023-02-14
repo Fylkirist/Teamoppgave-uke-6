@@ -6,7 +6,7 @@ function renderGame(){
     gameWindow.innerHTML=/*HTML*/`
     <div id="pictureBox">
         <img src="assets/roadSprite.png" id="backgroundLayer"></img>
-        <div id="foregroundLayer">${renderForegroundElements()}</div>
+        ${renderForegroundElements()}
     </div>
     <div id="sideBox"></div>
     <div id="textBox"></div>
@@ -14,6 +14,10 @@ function renderGame(){
 }
 //Her tegner vi alle forgrunnselementer (bilen, brødre, gjenstander i veien, etc)
 function renderForegroundElements(){
-    const playerCar = `<img style="top:${playerPosition.y};left:${playerPosition.x};" src="assets/cars/red_car.png" id="playerCar"></img>`
-    return playerCar
+    const foregroundLayer = `
+    <div id="foregroundLayer">
+        <img style="top:${playerPosition.y}px;left:${playerPosition.x}px;" src="assets/cars/red_car.png" id="playerCar"></img>
+    </div>
+    `
+    return foregroundLayer
 }

@@ -4,19 +4,23 @@ function characterController() {
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "ArrowDown" || event.key === "s") {
-            playerPosition.y += 50;
+            playerPosition.y += 10;
+            console.log(event)
             renderGame()
 
         } if (event.key === "ArrowUp" || event.key === "w") {
-            playerPosition.y -= 50;
+            playerPosition.y -= 10;
+            console.log(event)
             renderGame()
 
         } if (event.key === "ArrowLeft" || event.key === "a") {
-            playerPosition.x -= 50;
+            playerPosition.x -= 10;
+            console.log(event)
             renderGame()
 
         } if (event.key === "ArrowRight" || event.key === "d") {
-            playerPosition.x += 50;
+            playerPosition.x += 10;
+            console.log(event)
             renderGame()
         }
     });

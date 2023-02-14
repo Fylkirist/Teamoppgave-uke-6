@@ -67,5 +67,14 @@ button:hover {
   top: 540px;
 }
 #backgroundLayer{
-  width: 100%;
+  width: 500px;
+}
+#foregroundLayer{
+  width: 500px;
+  height: 500px;
+  top:20px;
+  position: absolute;
+}
+#playerCar{
+  position: absolute;
 }
