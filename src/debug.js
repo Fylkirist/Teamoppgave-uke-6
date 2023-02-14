@@ -4,7 +4,7 @@
 showDebugWindow() //turn this on or off to view debug window
 function showDebugWindow() {
     appDebug.innerHTML = /*html*/`
-    The character postion is ${playerPosition.y}y,${playerPosition.x}x.<br>
+    The character postion is ${playerPosition.x}x,${playerPosition.y}y.<br>
     <p style="font-size: 12px; color:#569459;">This window is intended for debugging
     <br>and is not a part of the final product.</p>
     `;
