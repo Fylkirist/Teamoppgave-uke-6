@@ -50,3 +50,7 @@ function renderUiElement() {
     return Ui
 }
 
+let renderFrames = setInterval(() => {
+  renderGame();
+  debugWindow();
+}, 33);

@@ -26,9 +26,6 @@ function characterController() {
     } else if (playerPosition.y > roadGrid.y + roadGrid.height) {
     playerPosition.y = roadGrid.y + roadGrid.height;
     }
-    
-    renderGame();
-    debugWindow();
     });
 }
 
@@ -47,5 +44,4 @@ setInterval(() => {
     else{
         carPosition.x=395
     }
-    renderGame()
 }, 10);
