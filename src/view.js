@@ -4,8 +4,8 @@ let progressbar2 = 100;
 
 
 const cars = [
-    /*bro cars*/        [  "blue_car.png","green_car.png","turqish_car.png","purple_car.png"],
-    /*ikke bro cars*/   ["orange_car.png","silver_car.png","police_car.png","police_car.png"]
+    /*bro cars*/        ["blue_car","green_car","turqish_car","purple_car","banangreen_car","cyan_car","greenpurple_car"],
+    /*ikke bro cars*/   ["orange_car_enemy","silver_car_enemy","blue_car_enemy","yellow_car_enemy","grayblue_car_enemy","green_car_enemy","red_car_enemy"]
 ];
 
 renderGame()
