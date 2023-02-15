@@ -26,7 +26,7 @@ function renderForegroundElements(){
     <div id="foregroundLayer">
         <img style="top:${playerPosition.y}px;left:${playerPosition.x}px;" src="assets/cars/red_car.png" id="playerCar"></img>
     </div>
-    `
+    `;
     return foregroundLayer
 }
 
