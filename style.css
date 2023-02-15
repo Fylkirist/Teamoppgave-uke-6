@@ -102,9 +102,17 @@ button:hover {
   position: absolute;
 }
 
+#healthBar{
+  position: absolute;
+  bottom: 0%;
+  width: 50px;
+}
 
-
-
+#respectBar{
+  position: absolute;
+  bottom: 0%;
+  width: 50px;
+}
 
 #debugBox {
   position: absolute;
