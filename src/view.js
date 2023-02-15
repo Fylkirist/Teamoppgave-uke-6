@@ -5,7 +5,7 @@ let progressbar2 = 100;
 
 const cars = [
     /*bro cars*/        ["blue_car","green_car","turqish_car","purple_car","banangreen_car","cyan_car","greenpurple_car"],
-    /*ikke bro cars*/   ["orange_car_enemy","silver_car_enemy","blue_car_enemy","yellow_car_enemy","grayblue_car_enemy","green_car_enemy","red_car_enemy"]
+    /*ikke bro cars*/   ["orange_car_enemy","silver_car_enemy","blue_car_enemy","yellow_car_enemy","grayblue_car_enemy","green_car_enemy","red_car_enemy","midnightpurple_car_enemy"]
 ];
 
 const props = [
