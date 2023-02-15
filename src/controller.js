@@ -31,3 +31,13 @@ function characterController() {
     debugWindow();
     });
     }
+
+
+    //posisjon på bro cars
+    setInterval(() => {
+        carPosition.y += 1; // flytter bil 1px ned
+        if (carPosition.y >= 500) { // resetter når deen treffer bunnen
+          carPosition.y = -120;
+        }
+        carElement.style.top = carPosition.y + 'px'; //endrer style (aka. css) posisjonen på bilen i "foregroundLayer".
+      }, 10);
