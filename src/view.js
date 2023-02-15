@@ -1,5 +1,10 @@
 const gameWindow = document.getElementById("windowBox")
 
+const cars = [
+    /*bro cars*/        ["blue_car.png","green_car.png","turqish_car.png","purple_car.png"],
+    /*ikke bro cars*/   ["orange_car.png","silver_car","police_car.png"]
+];
+
 renderGame()
 //Denne funksjonen oppdaterer hele skjermen
 function renderGame(){
@@ -8,7 +13,8 @@ function renderGame(){
         <img src="assets/roadSprite.png" id="backgroundLayer"></img>
         ${renderForegroundElements()}
     </div>
-    <div id="sideBox"></div>
+    <div id="sideBoxNorth"></div>
+    <div id="sideBoxSouth"></div>
     <div id="textBox">
     ${renderUiElement()}
     </div>
@@ -23,6 +29,7 @@ function renderForegroundElements(){
     `
     return foregroundLayer
 }
+
 
 function renderUiElement() {
     const Ui = `
