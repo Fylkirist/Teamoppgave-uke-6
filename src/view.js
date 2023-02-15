@@ -5,7 +5,7 @@ let progressbar2 = 100;
 
 const cars = [
     /*bro cars*/        [  "blue_car.png","green_car.png","turqish_car.png","purple_car.png"],
-    /*ikke bro cars*/   ["orange_car.png","silver_car","police_car.png"]
+    /*ikke bro cars*/   ["orange_car.png","silver_car.png","police_car.png","police_car.png"]
 ];
 
 renderGame()
@@ -15,10 +15,8 @@ function renderGame() {
       <img src="assets/roadSprite.png" id="backgroundLayer"></img>
       ${renderForegroundElements()}
     </div>
-    <div id="sideBoxNorth"></div>
-    <div id="sideBoxSouth"></div>
+    ${renderUiElement()}
     <div id="textBox">
-      ${renderUiElement()}
     </div>
   `;
 }
@@ -27,7 +25,7 @@ function renderForegroundElements(){
   const foregroundLayer = `
     <div id="foregroundLayer">
       <img style="top:${playerPosition.y}px;left:${playerPosition.x}px;" src="assets/cars/red_car.png" id="playerCar"></img>
-      <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[0][0]}" id="sideCars"></img>
+      <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[carPosition.type][carPosition.id]}" id="sideCars"></img>
     </div>
   `;
   return foregroundLayer
@@ -36,18 +34,14 @@ function renderForegroundElements(){
 // render the UI elements (health, score, reset button)
 function renderUiElement() {
     const Ui = `
-    <div class="wrapper">
-    <div id="health" style="width:${
-        (progressbar1 / 300) * 100
-      }px">${progressbar1}</div>
-    <div id="points" style = "width:${
-        (progressbar2 / 300) * 100
-      }px">${progressbar2}</div>
-      </div>
-    <div id="reset">
-    <button id="resetbutton"></button>
-    </div>
+    <div id="sideBoxNorth" style = "width:${
+      (progressbar1 / 300) * 100
+    }px">${progressbar1}</div>
+    <div id="sideBoxSouth" style = "width:${
+      (progressbar2 / 300) * 100
+    }px">${progressbar2}</div>
     `;
 
     return Ui
 }
+

@@ -30,13 +30,22 @@ function characterController() {
     renderGame();
     debugWindow();
     });
+}
+
+
+//posisjon på bro cars
+setInterval(() => {
+    carPosition.y += 1; // flytter bil 1px ned
+    if (carPosition.y >= 500) { // resetter når deen treffer bunnen
+        carPosition.y = -200;
+        carPosition.id = Math.floor(Math.random()*4)
+        carPosition.type = Math.floor(Math.random()*2)
     }
-
-
-    //posisjon på bro cars
-    setInterval(() => {
-        carPosition.y += 1; // flytter bil 1px ned
-        if (carPosition.y >= 500) { // resetter når deen treffer bunnen
-          carPosition.y = -120;
-        }
-      }, 10);
+    if (carPosition.type==1){
+        carPosition.x=-16
+    }
+    else{
+        carPosition.x=395
+    }
+    renderGame()
+}, 10);
