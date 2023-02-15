@@ -15,7 +15,8 @@ function renderGame() {
       <img src="assets/roadSprite.png" id="backgroundLayer"></img>
       ${renderForegroundElements()}
     </div>
-    <div id="sideBox"></div>
+    <div id="sideBoxNorth"></div>
+    <div id="sideBoxSouth"></div>
     <div id="textBox">
       ${renderUiElement()}
     </div>
