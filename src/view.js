@@ -1,6 +1,6 @@
 const gameWindow = document.getElementById("windowBox")
 let progressbar1 = 100;
-let progressbar2 = 0;
+let progressbar2 = 100;
 
 
 const cars = [
@@ -15,9 +15,8 @@ function renderGame() {
       <img src="assets/roadSprite.png" id="backgroundLayer"></img>
       ${renderForegroundElements()}
     </div>
-    <div id="sideBox"></div>
+    ${renderUiElement()}
     <div id="textBox">
-      ${renderUiElement()}
     </div>
   `;
 }
@@ -35,17 +34,14 @@ function renderForegroundElements(){
 // render the UI elements (health, score, reset button)
 function renderUiElement() {
     const Ui = `
-    <div id="health" style="width:${
-        (progressbar1 / 100) * 300
-      }px">${progressbar1}</div>
-    <div id="points">${progressbar2}</div>
-    <div id="reset"></div>
+    <div id="sideBoxNorth" style = "width:${
+      (progressbar1 / 300) * 100
+    }px">${progressbar1}</div>
+    <div id="sideBoxSouth" style = "width:${
+      (progressbar2 / 300) * 100
+    }px">${progressbar2}</div>
     `;
 
     return Ui
 }
 
-function updateProgressbar1() {
-    if(progressbar1 > 0) {
-    }
-}
