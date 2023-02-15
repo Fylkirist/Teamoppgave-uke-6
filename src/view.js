@@ -1,4 +1,7 @@
 const gameWindow = document.getElementById("windowBox")
+let progressbar1 = 100;
+let progressbar2 = 0;
+
 
 const cars = [
     /*bro cars*/        [  "blue_car.png","green_car.png","turqish_car.png","purple_car.png"],
@@ -31,10 +34,18 @@ function renderForegroundElements(){
 
 // render the UI elements (health, score, reset button)
 function renderUiElement() {
-  const Ui = `
-    <div id="health">${health}</div>
-    <div id="points">${score}</div>
+    const Ui = `
+    <div id="health" style="width:${
+        (progressbar1 / 100) * 300
+      }px">${progressbar1}</div>
+    <div id="points">${progressbar2}</div>
     <div id="reset"></div>
-  `;
-  return Ui
+    `;
+
+    return Ui
+}
+
+function updateProgressbar1() {
+    if(progressbar1 > 0) {
+    }
 }
