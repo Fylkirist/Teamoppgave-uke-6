@@ -38,7 +38,7 @@ setInterval(() => {
     carPosition.y += 1; // flytter bil 1px ned
     if (carPosition.y >= 500) { // resetter når deen treffer bunnen
         carPosition.y = -200;
-        carPosition.id = Math.floor(Math.random()*4)
+        carPosition.id = Math.floor(Math.random()*7)
         carPosition.type = Math.floor(Math.random()*2)
     }
     if (carPosition.type==1){
