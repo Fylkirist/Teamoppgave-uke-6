@@ -9,8 +9,10 @@ function renderGame(){
         ${renderForegroundElements()}
     </div>
     <div id="sideBox"></div>
-    <div id="textBox"></div>
-    `
+    <div id="textBox">
+    ${renderUiElement()}
+    </div>
+    `;
 }
 //Her tegner vi alle forgrunnselementer (bilen, brødre, gjenstander i veien, etc)
 function renderForegroundElements(){
@@ -27,5 +29,7 @@ function renderUiElement() {
     <div id="health"></div>
     <div id="points"></div>
     <div id="reset"></div>
-    `
+    `;
+
+    return Ui
 }
