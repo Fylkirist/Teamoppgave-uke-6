@@ -1,6 +1,6 @@
 const gameWindow = document.getElementById("windowBox")
 let progressbar1 = 100;
-let progressbar2 = 0;
+let progressbar2 = 100;
 
 
 const cars = [
@@ -36,17 +36,18 @@ function renderForegroundElements(){
 
 function renderUiElement() {
     const Ui = `
+    <div class="wrapper">
     <div id="health" style="width:${
-        (progressbar1 / 100) * 300
+        (progressbar1 / 300) * 100
       }px">${progressbar1}</div>
-    <div id="points">${progressbar2}</div>
-    <div id="reset"></div>
+    <div id="points" style = "width:${
+        (progressbar2 / 300) * 100
+      }px">${progressbar2}</div>
+      </div>
+    <div id="reset">
+    <button id="resetbutton"></button>
+    </div>
     `;
 
     return Ui
-}
-
-function updateProgressbar1() {
-    if(progressbar1 > 0) {
-    }
 }
