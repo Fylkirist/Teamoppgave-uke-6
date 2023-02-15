@@ -1,4 +1,7 @@
 const gameWindow = document.getElementById("windowBox")
+let progressbar1 = 100;
+let progressbar2 = 0;
+
 
 renderGame()
 //Denne funksjonen oppdaterer hele skjermen
@@ -26,10 +29,17 @@ function renderForegroundElements(){
 
 function renderUiElement() {
     const Ui = `
-    <div id="health"></div>
-    <div id="points"></div>
+    <div id="health" style="width:${
+        (progressbar1 / 100) * 300
+      }px">${progressbar1}</div>
+    <div id="points">${progressbar2}</div>
     <div id="reset"></div>
     `;
 
     return Ui
+}
+
+function updateProgressbar1() {
+    if(progressbar1 > 0) {
+    }
 }
