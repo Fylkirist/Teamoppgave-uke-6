@@ -39,5 +39,4 @@ function characterController() {
         if (carPosition.y >= 500) { // resetter når deen treffer bunnen
           carPosition.y = -120;
         }
-        carElement.style.top = carPosition.y + 'px'; //endrer style (aka. css) posisjonen på bilen i "foregroundLayer".
       }, 10);
