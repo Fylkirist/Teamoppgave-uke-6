@@ -1,5 +1,3 @@
-
-
 //use this to see what room your in to debug
 debugWindow() //turn this on or off to view debug window
 function debugWindow() {

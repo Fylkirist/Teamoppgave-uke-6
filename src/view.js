@@ -31,6 +31,7 @@ function renderForegroundElements(){
     <div id="foregroundLayer">
       <img style="top:${playerPosition.y}px;left:${playerPosition.x}px;" src="assets/cars/red_car.png" id="playerCar"></img>
       <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[carPosition.type][carPosition.id]}.png" id="sideCars"></img>
+      <img style="top:${propPosition.y}px;left:${propPosition.x}px;" src="assets/props/${props[propPosition.type][propPosition.id]}.png" id="props"></img>
     </div>
   `;
   return foregroundLayer

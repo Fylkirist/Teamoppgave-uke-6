@@ -29,19 +29,28 @@ function characterController() {
     });
 }
 
-
-//posisjon på bro cars
+//posisjon på bro CARS
 setInterval(() => {
     carPosition.y += 1; // flytter bil 1px ned
-    if (carPosition.y >= 500) { // resetter når deen treffer bunnen
+    if (carPosition.y >= 500) { // resetter når den treffer bunnen
         carPosition.y = -200;
         carPosition.id = Math.floor(Math.random()*7)
-        carPosition.type = Math.floor(Math.random()*2)
+        carPosition.type = Math.floor(Math.random()*3)
     }
     if (carPosition.type==1){
-        carPosition.x=-16
+        carPosition.x=-18
     }
     else{
         carPosition.x=395
+    }
+}, 10);
+
+//posisjon på PROPS
+setInterval(() => {
+    propPosition.y += 1; // flytter props 1px ned
+    if (propPosition.y >= 500) { // resetter når de treffer bunnen
+        propPosition.y = -200;
+        propPosition.id = Math.floor(Math.random()*3)
+        carPosition.type = Math.floor(Math.random()*2)
     }
 }, 10);
