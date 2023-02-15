@@ -34,8 +34,8 @@ setInterval(() => {
     carPosition.y += 1; // flytter bil 1px ned
     if (carPosition.y >= 500) { // resetter når den treffer bunnen
         carPosition.y = -200;
-        carPosition.id = Math.floor(Math.random()*7)
-        carPosition.type = Math.floor(Math.random()*3)
+        carPosition.id = Math.floor(Math.random()*8)
+        carPosition.type = Math.floor(Math.random()*2)
     }
     if (carPosition.type==1){
         carPosition.x=-18
@@ -51,6 +51,6 @@ setInterval(() => {
     if (propPosition.y >= 500) { // resetter når de treffer bunnen
         propPosition.y = -200;
         propPosition.id = Math.floor(Math.random()*3)
-        carPosition.type = Math.floor(Math.random()*2)
+        propPosition.type = Math.floor(Math.random()*2)
     }
 }, 10);
