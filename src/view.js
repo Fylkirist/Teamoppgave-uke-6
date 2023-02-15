@@ -5,7 +5,7 @@ let progressbar2 = 0;
 
 const cars = [
     /*bro cars*/        [  "blue_car.png","green_car.png","turqish_car.png","purple_car.png"],
-    /*ikke bro cars*/   ["orange_car.png","silver_car","police_car.png"]
+    /*ikke bro cars*/   ["orange_car.png","silver_car.png","police_car.png","police_car.png"]
 ];
 
 renderGame()
@@ -26,7 +26,7 @@ function renderForegroundElements(){
   const foregroundLayer = `
     <div id="foregroundLayer">
       <img style="top:${playerPosition.y}px;left:${playerPosition.x}px;" src="assets/cars/red_car.png" id="playerCar"></img>
-      <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[0][0]}" id="sideCars"></img>
+      <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[carPosition.type][carPosition.id]}" id="sideCars"></img>
     </div>
   `;
   return foregroundLayer
