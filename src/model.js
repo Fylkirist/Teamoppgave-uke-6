@@ -16,7 +16,7 @@ const cars = [
 ];
 
 const props = [
-    /*vei hindringer*/  ["boost_arrows","work_brigade"],
+    /*vei hindringer*/  ["work_cone","work_brigade"],
     /*politi*/          ["police_car","sivil_police_car"]
 ];
 
