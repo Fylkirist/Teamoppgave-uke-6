@@ -7,7 +7,7 @@ var health = 100;
 
 
 let progressbar1 = 100;
-let progressbar2 = 0;
+let progressbar2 = 50;
 
 
 const cars = [

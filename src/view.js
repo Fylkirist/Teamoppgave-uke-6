@@ -27,10 +27,10 @@ function renderForegroundElements(){
 // render the UI elements (health, score, reset button)
 function renderUiElement() {
     const Ui = `
-    <div id="sideBoxNorth"><div id="healthBar" style = "bottom:0px; background-color:green; height:${
+    <div id="sideBoxNorth"><div id="healthBar" style = "font-weight:bold; bottom:0px; background-color:#ae2633; color:black; height:${
       progressbar1
     }%">${progressbar1}</div></div>
-    <div id="sideBoxSouth"><div id="respectBar" style = "bottom:0px; background-color:blue; height:${
+    <div id="sideBoxSouth"><div id="respectBar" style = "font-weight:bold; bottom:0px; background-color:#2aa198; color:black; height:${
       progressbar2
     }%">${progressbar2}</div></div>
     `;
@@ -41,5 +41,6 @@ function renderUiElement() {
 let renderFrames = setInterval(() => {
   renderGame();
   debugWindow();
+  win()
   death();
 }, 33); 

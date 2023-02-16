@@ -102,9 +102,20 @@ function collisionDetect(){
         }
     }
 
+    function win(){
+        if (progressbar2 <= 100){
+            clearInterval(renderFrames);
+            textBox.innerHTML=/*HTML*/`
+            <div id="win">Wallah, du er en ekte broder!</div>
+          `;
+        }
+    }
+
 function death(){
     if (progressbar1 <= 0){
         clearInterval(renderFrames);
-        window.alert("you lost");
+        textBox.innerHTML=/*HTML*/`
+        <div id="gameover">Du er en wankster, din taper! </div>
+      `;
     }
 }
