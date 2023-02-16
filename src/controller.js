@@ -81,7 +81,7 @@ setInterval(() => {
     if (propPosition.y >= 500) { // resetter når de treffer bunnen
         propPosition.y = -200;
         propPosition.id = Math.floor(Math.random()*3)
-        propPosition.type = Math.floor(Math.random()*2)
+        propPosition.type = Math.floor(Math.random()*1)
         propPosition.x = Math.floor(Math.random()*267)+50
     }
     collisionDetect();
