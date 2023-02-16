@@ -1,13 +1,13 @@
 var playerPosition = {x:200,y:250};
 let carPosition = {x:395, y:-120, id:0, type:0}; // posisjon på bro bil
-let propPosition = {x:60, y:0, id:0, type:0}; // posisjon på bro bil
+let propPosition = {x:60, y:0, id:0, type:0}; // posisjon på prop
 const roadGrid = {x:50,y:0, width: 267, height: 370}
 var score = 0;
 var health = 100;
 
 
 let progressbar1 = 100;
-let progressbar2 = 100;
+let progressbar2 = 0;
 
 
 const cars = [
@@ -19,3 +19,5 @@ const props = [
     /*vei hindringer*/  ["boost_arrows","work_brigade","work_cone"],
     /*politi*/          ["police_car","sivil_police_car","police_car"]
 ];
+
+let greetingFlag = false
