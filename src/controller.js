@@ -7,9 +7,8 @@ function greetHomie(key){
         progressbar2-=10
         progressbar1-=10
     }
-    else if(key=="e" && carPosition.id<4 && carPosition.type==0 ||
-    key=="r" && carPosition.id>=4 && carPosition.id<6 && carPosition.type==0 ||
-    key=="t" && carPosition.id>=6 && carPosition.type==0){
+    else if(key=="e" && carPosition.type==1 ||
+    key=="r" && carPosition.type==0){
         progressbar2+=10
     }
     else{
