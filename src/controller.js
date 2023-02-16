@@ -38,7 +38,7 @@ function characterController() {
     } else if (event.key === "ArrowRight" || event.key === "d") {
     playerPosition.x += 10;
     }
-    if(event.key ==="e" || event.key ==="t" || event.key ==="r"){
+    if(event.key ==="e" || event.key ==="r"){
         greetHomie(event.key)
     }
     //sjekker kolisjon shit
