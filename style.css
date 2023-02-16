@@ -53,7 +53,7 @@ button:hover {
 #sideBoxNorth {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.02);
-  width: 50px;
+  width: 35px;
   height: 242px;
   border-radius: 4px;
   box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
@@ -64,7 +64,7 @@ button:hover {
 #sideBoxSouth {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.02);
-  width: 50px;
+  width: 35px;
   height: 242px;
   border-radius: 4px;
   box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
@@ -105,13 +105,13 @@ button:hover {
 #healthBar{
   position: absolute;
   bottom: 0%;
-  width: 50px;
+  width: 100%;
 }
 
 #respectBar{
   position: absolute;
   bottom: 0%;
-  width: 50px;
+  width: 100%;
 }
 
 #debugBox {
