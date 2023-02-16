@@ -2,7 +2,7 @@ const gameWindow = document.getElementById("windowBox")
 
 renderGame()
 function renderGame() {
-  gameWindow.innerHTML=/*HTML*/`
+  gameWindow.innerHTML =/*HTML*/`
     <div id="pictureBox">
       <img src="assets/roadSprite.png" id="backgroundLayer"></img>
       ${renderForegroundElements()}
@@ -13,7 +13,7 @@ function renderGame() {
   `;
 }
 
-function renderForegroundElements(){
+function renderForegroundElements() {
   const foregroundLayer = `
     <div id="foregroundLayer">
       <img style="top:${carPosition.y}px;left:${carPosition.x}px;" src="assets/cars/${cars[carPosition.type][carPosition.id]}.png" id="sideCars"></img>
@@ -26,16 +26,14 @@ function renderForegroundElements(){
 
 // render the UI elements (health, score, reset button)
 function renderUiElement() {
-    const Ui = `
-    <div id="sideBoxNorth"><div id="healthBar" style = "font-weight:bold; bottom:0px; background-color:#ae2633; color:black; height:${
-      progressbar1
+  const Ui = `
+    <div id="sideBoxNorth"><div id="healthBar" style = "font-weight:bold; bottom:0px; background-color:#ae2633; color:black; height:${progressbar1
     }%">${progressbar1}</div></div>
-    <div id="sideBoxSouth"><div id="respectBar" style = "font-weight:bold; bottom:0px; background-color:#2aa198; color:black; height:${
-      progressbar2
+    <div id="sideBoxSouth"><div id="respectBar" style = "font-weight:bold; bottom:0px; background-color:#2aa198; color:black; height:${progressbar2
     }%">${progressbar2}</div></div>
     `;
 
-    return Ui
+  return Ui
 }
 
 let renderFrames = setInterval(() => {

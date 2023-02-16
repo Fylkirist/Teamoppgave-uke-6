@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
-
 /*------------- HTML MAIN -------------*/
 body {
   background-color: #1c1c1c;
@@ -47,7 +46,7 @@ button:hover {
   height: 500px;
   border-radius: 4px;
   box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
-  overflow:hidden;
+  overflow: hidden;
 }
 
 #sideBoxNorth {
@@ -59,7 +58,7 @@ button:hover {
   box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
   margin-left: 525px;
   text-align: center;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 #sideBoxSouth {
@@ -72,7 +71,7 @@ button:hover {
   margin-top: 260px;
   margin-left: 525px;
   text-align: center;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 #textBox {
@@ -84,33 +83,33 @@ button:hover {
   box-shadow: 0px 6px 19px -4px rgba(0, 0, 0, 0.75);
   top: 540px;
 }
-#backgroundLayer{
+#backgroundLayer {
   width: 500px;
 }
-#foregroundLayer{
+#foregroundLayer {
   width: 500px;
   height: 500px;
-  top:20px;
+  top: 20px;
   position: absolute;
   overflow: hidden;
 }
-#playerCar{
+#playerCar {
   position: absolute;
 }
-#sideCars{
+#sideCars {
   position: absolute;
 }
-#props{
+#props {
   position: absolute;
 }
 
-#healthBar{
+#healthBar {
   position: absolute;
   bottom: 0%;
   width: 100%;
 }
 
-#respectBar{
+#respectBar {
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -141,7 +140,7 @@ button:hover {
   margin-top: 37px;
   font-size: 30px;
   font-family: "DotGothic16", sans-serif;
-  color:#569459
+  color: #569459;
 }
 
 #gameover {
@@ -149,5 +148,5 @@ button:hover {
   margin-top: 37px;
   font-size: 30px;
   font-family: "DotGothic16", sans-serif;
-  color:#dc322f
+  color: #dc322f;
 }
