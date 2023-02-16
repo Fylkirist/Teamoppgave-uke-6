@@ -80,8 +80,8 @@ setInterval(() => {
     propPosition.y += 2; // flytter props 1px ned
     if (propPosition.y >= 500) { // resetter når de treffer bunnen
         propPosition.y = -200;
-        propPosition.id = Math.floor(Math.random()*3)
-        propPosition.type = Math.floor(Math.random()*1)
+        propPosition.id = Math.floor(Math.random()*2)
+        propPosition.type = Math.floor(Math.random()*2)
         propPosition.x = Math.floor(Math.random()*267)+50
     }
     collisionDetect();
@@ -89,16 +89,15 @@ setInterval(() => {
 
 function collisionDetect(){
 
-    if (playerPosition.x < propPosition.x + propPosition.width &&
+    if (playerPosition.x < propPosition.x + propDict[props[propPosition.type][propPosition.id]].width &&
         playerPosition.x + 71 > propPosition.x &&
-        playerPosition.y < propPosition.y + propPosition.height &&
+        playerPosition.y < propPosition.y + propDict[props[propPosition.type][propPosition.id]].height &&
         playerPosition.y + 103 > propPosition.y
         ) {
             // collision detected
             progressbar1 -=20;
-            propPosition.x + 500
+            propPosition.x += 500
         } else {
             // ingen collision
         }
-        console.log('collision')
     }

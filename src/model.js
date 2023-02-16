@@ -22,18 +22,10 @@ const props = [
 
 let greetingFlag = false
 
+const propDict = {
+    "work_cone":{width:47,height:55},
+    "work_brigade":{width:79,height:47},
+    "police_car":{width:71,height:103},
+    "sivil_police_car":{width:71,height:103}
+}
 
-
-function collisionDetect(){
-
-    if (playerPosition.x < propPosition.x + propPosition.width &&
-        playerPosition.x + 71 > propPosition.x &&
-        playerPosition.y < propPosition.y + propPosition.height &&
-        playerPosition.y + 103 > propPosition.y
-        ) {
-            // collision detected
-        } else {
-            // ingen collision
-        }
-        console.log('collision')
-    }
