@@ -21,3 +21,21 @@ const props = [
 ];
 
 let greetingFlag = false
+
+
+
+function collisionDetect(){
+
+    if (playerPosition.x < propPosition.x + propPosition.width &&
+        playerPosition.x + 71 > propPosition.x &&
+        playerPosition.y < propPosition.y + propPosition.height &&
+        playerPosition.y + 103 > propPosition.y
+        ) {
+            // collision detected
+        } else {
+            // ingen collision
+        }
+        console.log('collision')
+    }
+
+    71 bre 103 høy
