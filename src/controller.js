@@ -101,3 +101,10 @@ function collisionDetect(){
             // ingen collision
         }
     }
+
+function death(){
+    if (progressbar1 <= 0){
+        clearInterval(renderFrames);
+        window.alert("you lost");
+    }
+}

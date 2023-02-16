@@ -41,4 +41,5 @@ function renderUiElement() {
 let renderFrames = setInterval(() => {
   renderGame();
   debugWindow();
+  death();
 }, 33); 
