@@ -112,7 +112,7 @@ function collisionDetect(){
     }
 
 function death(){
-    if (progressbar1 <= 0){
+    if ((progressbar1 <= 0) || (progressbar2 <= 0)) {
         clearInterval(renderFrames);
         textBox.innerHTML=/*HTML*/`
         <div id="gameover">Du er en wankster, din taper! </div>
