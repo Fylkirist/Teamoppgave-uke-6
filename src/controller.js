@@ -103,7 +103,7 @@ function collisionDetect(){
     }
 
     function win(){
-        if (progressbar2 <= 100){
+        if (progressbar2 >= 100){
             clearInterval(renderFrames);
             textBox.innerHTML=/*HTML*/`
             <div id="win">Wallah, du er en ekte broder!</div>
