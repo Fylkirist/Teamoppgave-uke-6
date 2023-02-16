@@ -14,6 +14,12 @@ function greetHomie(key){
     else{
         progressbar2-=10
     }
+    if(progressbar2>0){
+        progressbar2=0
+    }
+    if (progressbar1>0){
+        //funksjon for å håndtere tap
+    }
     greetingFlag=true 
 }
 
