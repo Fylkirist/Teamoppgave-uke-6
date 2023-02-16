@@ -84,4 +84,21 @@ setInterval(() => {
         propPosition.type = Math.floor(Math.random()*2)
         propPosition.x = Math.floor(Math.random()*267)+50
     }
+    collisionDetect();
 }, 10);
+
+function collisionDetect(){
+
+    if (playerPosition.x < propPosition.x + propPosition.width &&
+        playerPosition.x + 71 > propPosition.x &&
+        playerPosition.y < propPosition.y + propPosition.height &&
+        playerPosition.y + 103 > propPosition.y
+        ) {
+            // collision detected
+            progressbar1 -=20;
+            propPosition.x + 500
+        } else {
+            // ingen collision
+        }
+        console.log('collision')
+    }
